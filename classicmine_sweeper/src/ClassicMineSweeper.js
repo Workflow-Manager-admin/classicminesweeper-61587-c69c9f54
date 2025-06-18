@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 // PUBLIC_INTERFACE
 /** ClassicMineSweeper Main Container
- * Renders the header (timer, flag count), minefield grid, and game status.
+ * Renders the minefield grid, game status, restart button, flag count, and timer in an aligned, clean layout.
  * Light theme colors: primary (#4CAF50), secondary (#FFC107), accent (#F44336)
  */
 function ClassicMineSweeper({
@@ -199,39 +199,6 @@ function ClassicMineSweeper({
     }
   }
 
-  // Render Functions
-  function renderHeader() {
-    return (
-      <div className="cms-header">
-        <div className="cms-header-section">
-          <span className="cms-flag-icon" title="Flags remaining" />
-          <span className="cms-flag-count">
-            {minesCount - flags}
-          </span>
-        </div>
-        <button className="cms-reset" onClick={resetGame} title="Restart">
-          {gameState === "lost"
-            ? "😢"
-            : gameState === "won"
-            ? "😎"
-            : "🙂"}
-        </button>
-        <div className="cms-header-section">
-          <span className="cms-time-label" title="Time Elapsed">&#9200;</span>
-          <span className="cms-time">{elapsed}</span>
-        </div>
-        <button
-          className="cms-restart-btn"
-          onClick={resetGame}
-          title="Restart Game"
-          aria-label="Restart Game"
-        >
-          Restart Game
-        </button>
-      </div>
-    );
-  }
-
   function renderStatus() {
     let statusMsg = "";
     if (gameState === "lost") statusMsg = "💥 Game Over!";
@@ -307,9 +274,38 @@ function ClassicMineSweeper({
     );
   }
 
+  // Visually balanced header bar (not the old 'header') - new layout with timer, flag count, and restart, centered.
+  function renderTopBar() {
+    return (
+      <div className="cms-topbar">
+        <div className="cms-topbar-section">
+          <span className="cms-flag-icon" title="Flags remaining" />
+          <span className="cms-flag-count">{minesCount - flags}</span>
+        </div>
+        <button
+          className="cms-restart-btn"
+          onClick={resetGame}
+          title="Restart Game"
+          aria-label="Restart Game"
+        >
+          {gameState === "lost"
+            ? "😢"
+            : gameState === "won"
+            ? "😎"
+            : "🙂"}{" "}
+          Restart
+        </button>
+        <div className="cms-topbar-section">
+          <span className="cms-time-label" title="Time Elapsed">&#9200;</span>
+          <span className="cms-time">{elapsed}</span>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="cms-main-container">
-      {renderHeader()}
+      {renderTopBar()}
       {renderStatus()}
       {renderGrid()}
     </div>
