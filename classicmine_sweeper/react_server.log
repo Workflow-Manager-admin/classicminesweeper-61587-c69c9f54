@@ -7,35 +7,39 @@
 <i> [webpack-dev-server] On Your Network (IPv4): http://172.17.0.2:3000/
 <i> [webpack-dev-server] Content not from webpack is served from './public' directory
 Injecting EditorRootWrapper import: ../.ve/EditorRootWrapper
-asset bundle.js 1.39 MiB [emitted] (name: main)
+asset bundle.js 1.42 MiB [emitted] (name: main)
 asset index.html 1.98 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
 modules by path ./node_modules/ 1.24 MiB 31 modules
-modules by path ./src/ 10.3 KiB
-  modules by path ./src/*.css 7.49 KiB 4 modules
-  modules by path ./src/*.js 2.76 KiB
+modules by path ./src/ 24.9 KiB
+  modules by path ./src/*.css 13.4 KiB 6 modules
+  modules by path ./src/*.js 11.5 KiB
     ./src/index.js 530 bytes [built] [code generated]
-    ./src/App.js 2.24 KiB [built] [code generated]
+    + 2 modules
 modules by path ./.ve/ 15.1 KiB
   modules by path ./.ve/*.js 10.6 KiB 2 modules
   modules by path ./.ve/*.css 2.93 KiB
     ./.ve/EditorOverlay.css 2.25 KiB [built] [code generated]
     ./node_modules/css-loader/dist/cjs.js!./.ve/EditorOverlay.css 697 bytes [built] [code generated]
   ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1429 ms
+webpack 5.99.9 compiled successfully in 1399 ms
 assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.44 MiB
+assets by path *.js 1.43 MiB
   asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.1c7a4113f543c2577518.hot-update.js 29.3 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.1c7a4113f543c2577518.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.44 MiB = bundle.js 1.42 MiB main.1c7a4113f543c2577518.hot-update.js 29.3 KiB
-cached modules 1.26 MiB [cached] 41 modules
+  asset main.8c27de4295aee393cac8.hot-update.js 12.9 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.8c27de4295aee393cac8.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.8c27de4295aee393cac8.hot-update.js 12.9 KiB
+cached modules 1.27 MiB [cached] 44 modules
 runtime modules 27.5 KiB 14 modules
-javascript modules 16.9 KiB
-  modules by path ./src/*.js 11 KiB
-    ./src/App.js 1.64 KiB [built] [code generated]
-    ./src/ClassicMineSweeper.js 9.33 KiB [built] [code generated]
-  modules by path ./src/*.css 5.95 KiB
-    ./src/ClassicMineSweeper.css 2.27 KiB [built] [code generated]
-    ./node_modules/css-loader/dist/cjs.js!./src/ClassicMineSweeper.css 3.68 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 212 ms
+./src/ClassicMineSweeper.js 9.6 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 205 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.42 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.f970586b5edc627036db.hot-update.js 6.78 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.f970586b5edc627036db.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.42 MiB = bundle.js 1.42 MiB main.f970586b5edc627036db.hot-update.js 6.78 KiB
+cached modules 1.28 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./node_modules/css-loader/dist/cjs.js!./src/ClassicMineSweeper.css 4.15 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 55 ms

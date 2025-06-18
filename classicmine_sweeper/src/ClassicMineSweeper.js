@@ -220,6 +220,14 @@ function ClassicMineSweeper({
           <span className="cms-time-label" title="Time Elapsed">&#9200;</span>
           <span className="cms-time">{elapsed}</span>
         </div>
+        <button
+          className="cms-restart-btn"
+          onClick={resetGame}
+          title="Restart Game"
+          aria-label="Restart Game"
+        >
+          Restart Game
+        </button>
       </div>
     );
   }
