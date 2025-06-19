@@ -11,9 +11,9 @@ asset bundle.js 1.42 MiB [emitted] (name: main)
 asset index.html 1.98 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
 modules by path ./node_modules/ 1.24 MiB 31 modules
-modules by path ./src/ 25.4 KiB
+modules by path ./src/ 25.5 KiB
   modules by path ./src/*.css 13.7 KiB 6 modules
-  modules by path ./src/*.js 11.7 KiB
+  modules by path ./src/*.js 11.8 KiB
     ./src/index.js 530 bytes [built] [code generated]
     + 2 modules
 modules by path ./.ve/ 15.1 KiB
@@ -22,4 +22,84 @@ modules by path ./.ve/ 15.1 KiB
     ./.ve/EditorOverlay.css 2.25 KiB [built] [code generated]
     ./node_modules/css-loader/dist/cjs.js!./.ve/EditorOverlay.css 697 bytes [built] [code generated]
   ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1464 ms
+webpack 5.99.9 compiled successfully in 1266 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.43 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.166394499ea881b3973c.hot-update.js 13 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.166394499ea881b3973c.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.166394499ea881b3973c.hot-update.js 13 KiB
+cached modules 1.27 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./src/ClassicMineSweeper.js 9.62 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 67 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.43 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.45fdd8e6b725bcc5b6a4.hot-update.js 13.6 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.45fdd8e6b725bcc5b6a4.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.45fdd8e6b725bcc5b6a4.hot-update.js 13.6 KiB
+cached modules 1.27 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./src/ClassicMineSweeper.js 10.1 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 58 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.43 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.67cb2f40be243c917cc9.hot-update.js 14.6 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.67cb2f40be243c917cc9.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.67cb2f40be243c917cc9.hot-update.js 14.6 KiB
+cached modules 1.27 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./src/ClassicMineSweeper.js 10.9 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 108 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.43 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.9a7b87f1227692eaa7dc.hot-update.js 8.19 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.9a7b87f1227692eaa7dc.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.9a7b87f1227692eaa7dc.hot-update.js 8.19 KiB
+cached modules 1.28 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./node_modules/css-loader/dist/cjs.js!./src/ClassicMineSweeper.css 5.49 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 48 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.43 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.eb86993cd92c8656529e.hot-update.js 8.38 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.eb86993cd92c8656529e.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.eb86993cd92c8656529e.hot-update.js 8.38 KiB
+cached modules 1.28 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./node_modules/css-loader/dist/cjs.js!./src/ClassicMineSweeper.css 5.68 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 34 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.43 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.dbcbf2d038a8fc8c4f18.hot-update.js 9.53 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.dbcbf2d038a8fc8c4f18.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.dbcbf2d038a8fc8c4f18.hot-update.js 9.53 KiB
+cached modules 1.28 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./node_modules/css-loader/dist/cjs.js!./src/ClassicMineSweeper.css 6.78 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 34 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.43 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.bd8cf863bd583c5e3ced.hot-update.js 9.89 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.bd8cf863bd583c5e3ced.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.bd8cf863bd583c5e3ced.hot-update.js 9.89 KiB
+cached modules 1.28 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./node_modules/css-loader/dist/cjs.js!./src/ClassicMineSweeper.css 7.13 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 37 ms
+assets by status 1.98 KiB [cached] 1 asset
+assets by path *.js 1.43 MiB
+  asset bundle.js 1.42 MiB [emitted] (name: main)
+  asset main.0a37f03eba74b36159e3.hot-update.js 11.3 KiB [emitted] [immutable] [hmr] (name: main)
+asset main.0a37f03eba74b36159e3.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.0a37f03eba74b36159e3.hot-update.js 11.3 KiB
+cached modules 1.28 MiB [cached] 44 modules
+runtime modules 27.5 KiB 14 modules
+./node_modules/css-loader/dist/cjs.js!./src/ClassicMineSweeper.css 8.52 KiB [built] [code generated]
+webpack 5.99.9 compiled successfully in 33 ms

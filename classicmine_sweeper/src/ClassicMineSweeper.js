@@ -3,8 +3,8 @@ import "./ClassicMineSweeper.css";
 
 /**
  * ClassicMineSweeper Main Container.
- * Renders minefield grid, game status, restart button, flag count, and timer in a light theme.
- * Light theme colors: primary (#4CAF50), secondary (#FFC107), accent (#F44336)
+ * Renders minefield grid, game status, restart button, flag count, and timer. 
+ * Now supports glassmorphic theme and dark mode toggle.
  */
 // PUBLIC_INTERFACE
 function ClassicMineSweeper({
@@ -12,6 +12,25 @@ function ClassicMineSweeper({
   cols = 9,
   minesCount = 10,
 }) {
+  // Theme management
+  const prefersDark =
+    typeof window !== "undefined" &&
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const [isDarkMode, setIsDarkMode] = useState(prefersDark);
+
+  // Apply theme to body for smooth background switch
+  useEffect(() => {
+    document.body.setAttribute(
+      "data-cms-theme",
+      isDarkMode ? "dark" : "light"
+    );
+    return () => {
+      document.body.removeAttribute("data-cms-theme");
+    };
+  }, [isDarkMode]);
+
   // Possible game states: 'ready', 'playing', 'won', 'lost'
   const [gameState, setGameState] = useState("ready");
   const [grid, setGrid] = useState([]); // { mine: bool, adjacent: int }
@@ -261,7 +280,7 @@ function ClassicMineSweeper({
     );
   }
 
-  // Top header: flags left, reset, timer
+  // Top header: flags left, reset, timer, and dark mode toggle
   function renderTopBar() {
     return (
       <div className="cms-topbar">
@@ -283,15 +302,42 @@ function ClassicMineSweeper({
           Restart
         </button>
         <div className="cms-topbar-section">
-          <span className="cms-time-label" title="Time Elapsed">&#9200;</span>
+          <span className="cms-time-label" title="Time Elapsed">
+            &#9200;
+          </span>
           <span className="cms-time">{elapsed}</span>
+        </div>
+        {/* Dark mode toggle button */}
+        <div className="cms-topbar-section">
+          <button
+            className="cms-theme-toggle-btn"
+            aria-label="Toggle dark mode"
+            title={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+            onClick={() => setIsDarkMode((d) => !d)}
+            style={{
+              background: "none",
+              border: "none",
+              color: "inherit",
+              cursor: "pointer",
+              fontSize: "1.35rem",
+              outline: "none"
+            }}
+          >
+            {isDarkMode ? "🌙" : "☀️"}
+          </button>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="cms-main-container">
+    <div
+      className={
+        "cms-main-container glassy-theme" +
+        (isDarkMode ? " cms-dark-theme" : "")
+      }
+      data-theme={isDarkMode ? "dark" : "light"}
+    >
       {renderTopBar()}
       {renderStatus()}
       {renderGrid()}
